@@ -9,7 +9,7 @@ def prime?(integer)
   denominators = (2..integer - 1).to_a 
   if integer < 2
     false 
-  end 
+  else
     !(denominators.any? do |denominator| 
       integer % denominator == 0
       end)
